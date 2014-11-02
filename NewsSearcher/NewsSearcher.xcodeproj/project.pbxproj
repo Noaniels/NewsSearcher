@@ -15,6 +15,7 @@
 		9E3331601A05EEAD003B73F9 /* NewsSearcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33315F1A05EEAD003B73F9 /* NewsSearcherTests.swift */; };
 		9E33316A1A05EEDE003B73F9 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3331691A05EEDE003B73F9 /* Connection.swift */; };
 		9E33316B1A05EEDE003B73F9 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3331691A05EEDE003B73F9 /* Connection.swift */; };
+		9E4229B61A0600D2006E5B89 /* JavaScriptHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4229B51A0600D2006E5B89 /* JavaScriptHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		9E33315E1A05EEAD003B73F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E33315F1A05EEAD003B73F9 /* NewsSearcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSearcherTests.swift; sourceTree = "<group>"; };
 		9E3331691A05EEDE003B73F9 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		9E4229B51A0600D2006E5B89 /* JavaScriptHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JavaScriptHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				9E3331691A05EEDE003B73F9 /* Connection.swift */,
 				9E3331491A05EEAD003B73F9 /* AppDelegate.swift */,
 				9E33314B1A05EEAD003B73F9 /* ViewController.swift */,
+				9E4229B51A0600D2006E5B89 /* JavaScriptHelper.swift */,
 				9E33314D1A05EEAD003B73F9 /* Main.storyboard */,
 				9E3331501A05EEAD003B73F9 /* Images.xcassets */,
 				9E3331521A05EEAD003B73F9 /* LaunchScreen.xib */,
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4229B61A0600D2006E5B89 /* JavaScriptHelper.swift in Sources */,
 				9E33314C1A05EEAD003B73F9 /* ViewController.swift in Sources */,
 				9E33316A1A05EEDE003B73F9 /* Connection.swift in Sources */,
 				9E33314A1A05EEAD003B73F9 /* AppDelegate.swift in Sources */,
@@ -411,6 +415,7 @@
 				9E3331651A05EEAD003B73F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E3331661A05EEAD003B73F9 /* Build configuration list for PBXNativeTarget "NewsSearcherTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				9E3331681A05EEAD003B73F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -32,11 +32,11 @@ public class Connection : NSObject{
     
     // アクセス
     public func doConnect() -> Void{
-        var url : NSURL = NSURL(string: urlStr)
+        var url : NSURL = NSURL(string: urlStr)!
         // キャッシュを無視
         var request : NSURLRequest = NSURLRequest(URL: url, cachePolicy:NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 10.0)
         
-        var connect : NSURLConnection = NSURLConnection(request: request, delegate: self, startImmediately: true)
+        var connect : NSURLConnection = NSURLConnection(request: request, delegate: self, startImmediately: true)!
         // 接続開始
         connect.start()
     }
@@ -55,11 +55,9 @@ public class Connection : NSObject{
     // データロードが完了したときのデリゲート
     func connectionDidFinishLoading(connection: NSURLConnection!){
         // バイナリデータが発行される
-        let html : String = NSString(data: self.data!, encoding: NSUTF8StringEncoding)
-        // コンソールに出力
-        println(html)
+        let html : String = NSString(data: self.data!, encoding: NSUTF8StringEncoding)!
         
-        // 処理を呼び出すだけ
-        self.delegate.showResult("success!")
+        // htmlを返す
+        self.delegate.showResult(html)
     }
 }

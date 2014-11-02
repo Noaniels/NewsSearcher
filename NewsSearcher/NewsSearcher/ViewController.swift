@@ -12,6 +12,11 @@ class ViewController: UIViewController,ConnectionResult {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var jsHelper = JavaScriptHelper();
+        
+        jsHelper.Sample();
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -23,15 +28,15 @@ class ViewController: UIViewController,ConnectionResult {
     
     
     // プロトコルを継承する
-    
+
     // !マークは値が必ず入っていることが保証されるOptional型
     // 値が入っていないとエラーになる
     // この場合はStroyboardからひもづけているので必ずついていなければならない
     // reference outlet@storyboard
-    @IBOutlet var label: UILabel!
+
     @IBOutlet var button : UIButton!
+    @IBOutlet var htmlLabel: UILabel!
     var connection : Connection!
-    
     
     // touch up inside@storyboard
     @IBAction func btnClick(sender: AnyObject) {
@@ -41,10 +46,15 @@ class ViewController: UIViewController,ConnectionResult {
         connection.doConnect()
     }
     
+    @IBAction func clearHtml(sender: UIButton) {
+        htmlLabel.text = "Cleared";
+    }
+    
+    
     // delegate
     // 実際に処理を行う
     func showResult(resultMessage: String?) -> Void {
-        label.text = resultMessage
+        htmlLabel.text = resultMessage
     }
-    
+//
 }
