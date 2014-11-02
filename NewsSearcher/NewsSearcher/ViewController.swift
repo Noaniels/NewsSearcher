@@ -8,14 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController,ConnectionResult {
+class ViewController: UIViewController,UISearchBarDelegate,ConnectionResult {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var jsHelper = JavaScriptHelper();
-        
-        jsHelper.Sample();
+        newsSearchBar.delegate = self;
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -36,6 +34,10 @@ class ViewController: UIViewController,ConnectionResult {
 
     @IBOutlet var button : UIButton!
     @IBOutlet var htmlLabel: UILabel!
+    @IBOutlet var newsSearchBar: UISearchBar!
+    @IBOutlet var tableView :UITableView!
+    
+    
     var connection : Connection!
     
     // touch up inside@storyboard
@@ -56,5 +58,16 @@ class ViewController: UIViewController,ConnectionResult {
     func showResult(resultMessage: String?) -> Void {
         htmlLabel.text = resultMessage
     }
-//
+    
+    @IBAction func buttonNext(sender: UIButton) {
+        self.performSegueWithIdentifier("SegueNextNews", sender: self)
+    }
+    
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        tableView = UITableView();
+    }
+    @IBAction func linkSpeedSensorView(sender: UIButton) {
+        self.performSegueWithIdentifier("SegueSpeedSensor", sender: self)
+    }
 }
