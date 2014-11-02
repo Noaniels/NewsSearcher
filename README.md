@@ -1,0 +1,2 @@
+NewsSearcher
+============
