@@ -67,6 +67,16 @@
                                     <action selector="linkSpeedSensorView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Tem-Nd-yeb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aUu-3c-Biz">
+                                <rect key="frame" x="179" y="444" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="TakeMovie">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkTakeMovieView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yiq-MN-9Ww"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -77,6 +87,7 @@
                         <outlet property="newsSearchBar" destination="aFC-ir-8hC" id="guw-2D-5U3"/>
                         <segue destination="KMs-03-vah" kind="push" identifier="SegueNextNews" id="xpR-bo-YL1"/>
                         <segue destination="lM9-57-xBI" kind="push" identifier="SegueSpeedSensor" id="7tE-zn-2x3"/>
+                        <segue destination="Yg4-y1-NYb" kind="push" identifier="SegueTakeMovie" id="abl-4R-I4X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -109,6 +120,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMr-9Z-y7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1184" y="128"/>
+        </scene>
+        <!--Take Movie View Controller-->
+        <scene sceneID="tL2-WZ-mGU">
+            <objects>
+                <viewController id="Yg4-y1-NYb" customClass="TakeMovieViewController" customModule="NewsSearcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EA0-3t-gBl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Id-Zs-zyV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IrS-TT-SDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="1426"/>
         </scene>
         <!--Speed Sensor View Controller-->
         <scene sceneID="WEb-th-441">

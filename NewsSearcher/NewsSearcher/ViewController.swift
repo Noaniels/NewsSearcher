@@ -70,4 +70,7 @@ class ViewController: UIViewController,UISearchBarDelegate,ConnectionResult {
     @IBAction func linkSpeedSensorView(sender: UIButton) {
         self.performSegueWithIdentifier("SegueSpeedSensor", sender: self)
     }
+    @IBAction func linkTakeMovieView(sender: UIButton) {
+        self.performSegueWithIdentifier("SegueTakeMovie", sender: self)
+    }
 }

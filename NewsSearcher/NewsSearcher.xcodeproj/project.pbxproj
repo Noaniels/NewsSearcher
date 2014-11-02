@@ -20,6 +20,7 @@
 		9E4229B91A06065B006E5B89 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4229B71A06065B006E5B89 /* NewsViewController.swift */; };
 		9E8B37021A0612BE00E53629 /* NewsSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B37011A0612BE00E53629 /* NewsSearchBar.swift */; };
 		9E8B37041A06212E00E53629 /* SpeedSensorViiewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B37031A06212E00E53629 /* SpeedSensorViiewController.swift */; };
+		9E8B37061A062ECA00E53629 /* TakeMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B37051A062ECA00E53629 /* TakeMovieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		9E4229B71A06065B006E5B89 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		9E8B37011A0612BE00E53629 /* NewsSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsSearchBar.swift; sourceTree = "<group>"; };
 		9E8B37031A06212E00E53629 /* SpeedSensorViiewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedSensorViiewController.swift; sourceTree = "<group>"; };
+		9E8B37051A062ECA00E53629 /* TakeMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeMovieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				9E4229B71A06065B006E5B89 /* NewsViewController.swift */,
 				9E8B37011A0612BE00E53629 /* NewsSearchBar.swift */,
 				9E8B37031A06212E00E53629 /* SpeedSensorViiewController.swift */,
+				9E8B37051A062ECA00E53629 /* TakeMovieViewController.swift */,
 			);
 			path = NewsSearcher;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				9E33314C1A05EEAD003B73F9 /* ViewController.swift in Sources */,
 				9E33316A1A05EEDE003B73F9 /* Connection.swift in Sources */,
 				9E8B37041A06212E00E53629 /* SpeedSensorViiewController.swift in Sources */,
+				9E8B37061A062ECA00E53629 /* TakeMovieViewController.swift in Sources */,
 				9E4229B81A06065B006E5B89 /* NewsViewController.swift in Sources */,
 				9E8B37021A0612BE00E53629 /* NewsSearchBar.swift in Sources */,
 				9E33314A1A05EEAD003B73F9 /* AppDelegate.swift in Sources */,
